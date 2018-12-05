@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int Increment(int *p){
+    *p = (*p)+1;
+}
+
+int main(){
+    int a;
+    a = 10;
+    Increment(&a);
+    printf("a = %d\n",a);
+}
